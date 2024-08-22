@@ -5,20 +5,18 @@ providing you with an entire communication infrastructure. Minibuffer
 history, moving between prompts, highlighting of SGR (escape sequences
 controlling colors on a tty) using Ansi Color, etc.
 
-Use `mu-open` to open a new connection. This will create two buffers
-for you. One buffer is the *mu connection buffer*. All the output from
-the host appears here. You can also type your commands here, but this
-will get confusing rather quickly as output gets added while your
-type.
+Use `mu-open` to open a new connection. This creates two buffers for
+you. One buffer is the *mu connection buffer*. All the output from the
+host appears here. You can also type your commands here, but this gets
+confusing rather quickly as output gets added while your type.
 
 That’s when the other buffer, the *mu input buffer*, comes into play.
-Whatever you type there will get sent to the mu connection buffer as
-well. If you do that, input and output will happen in two different
-buffers.
+Whatever you type there is sent to the *mu connection buffer* as well.
+If you do that, input and output happen in two different buffers.
 
-The only important buffer is the mu connection buffer. The mu input
-buffer is just for convenience. You can create more mu input buffers
-using ‘mu-input-buffer’, or you can kill all mu input buffers. It
+The only important buffer is the *mu connection buffer*. The *mu input
+buffer* is just for convenience. You can create more mu input buffers
+using `mu-input-buffer`, or you can kill all mu input buffers. It
 doesn’t matter.
 
 Before you can open new connections, you must customize `mu-worlds`.
